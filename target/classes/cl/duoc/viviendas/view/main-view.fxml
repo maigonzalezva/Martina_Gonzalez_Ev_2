@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.geometry.Insets?>
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="cl.duoc.viviendas.controller.MainController"
+            prefWidth="800" prefHeight="500">
+
+    <top>
+        <VBox spacing="8">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <Label text="Administradora de Viviendas" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+            <HBox spacing="8">
+                <TextField fx:id="txtBuscar" promptText="Buscar por código o tipo" HBox.hgrow="ALWAYS"/>
+                <Button text="Nueva vivienda" fx:id="btnNueva" onAction="#nueva"/>
+                <Button text="Eliminar" fx:id="btnEliminar" onAction="#eliminar"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tabla">
+            <columns>
+                <TableColumn fx:id="colTipo" text="Tipo" prefWidth="120"/>
+                <TableColumn fx:id="colCodigo" text="Código" prefWidth="120"/>
+                <TableColumn fx:id="colSuperficie" text="Superficie (m²)" prefWidth="140"/>
+                <TableColumn fx:id="colHabitaciones" text="Habitaciones" prefWidth="120"/>
+                <TableColumn fx:id="colCosto" text="Costo arriendo" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="20">
+            <padding><Insets top="8" right="10" bottom="10" left="10"/></padding>
+            <Label fx:id="lblContador"/>
+            <Label fx:id="lblMensaje"/>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,8 @@
+[ {
+  "codigo" : "PROP-D01",
+  "superficie" : 65.0,
+  "habitaciones" : 2,
+  "piso" : 3,
+  "gastoComunAlDia" : false,
+  "tipo" : "Departamento"
+} ]

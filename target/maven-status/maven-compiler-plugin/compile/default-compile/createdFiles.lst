@@ -1,0 +1,8 @@
+cl\duoc\viviendas\dao\ViviendaDAO.class
+cl\duoc\viviendas\controller\MainController.class
+cl\duoc\viviendas\repository\ViviendaRepository.class
+cl\duoc\viviendas\controller\RegistroController.class
+cl\duoc\viviendas\dao\ViviendaDAOJson$1.class
+cl\duoc\viviendas\dao\ViviendaDAOJson.class
+module-info.class
+cl\duoc\viviendas\dao\ViviendaDAOJson$2.class

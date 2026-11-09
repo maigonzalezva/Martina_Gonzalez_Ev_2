@@ -1,0 +1,7 @@
+[ {
+  "codigo" : "PROP-C01",
+  "superficie" : 120.0,
+  "habitaciones" : 3,
+  "tienePatio" : true,
+  "tipo" : "Casa"
+} ]
